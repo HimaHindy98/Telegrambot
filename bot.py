@@ -1,8 +1,11 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
+from dotenv import load_dotenv
+import os
 
-# بيانات البوت
-TOKEN = "7885684498:AAEuVHtdKwsok3xoU3SxpdhZ5oZP0iiQFe0"  # ضع توكن البوت هنا
+# تحميل التوكن من ملف .env
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 ADMIN_ID = 5435422706  # معرف المستخدم الخاص بك لاستقبال الاشتراكات
 CHANNEL_USERNAME = "@KanzInternetFree"  # قناة المستخدم
 
